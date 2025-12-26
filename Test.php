@@ -54,3 +54,15 @@ echo "<pre>";
 $triangulo = TriangleGenerator::generateTriangle(6);
 echo "$triangulo";
 echo "</pre>";
+
+$asignaturas=Asignatura::crearAsignaturasDeMuestra();
+$profesores=Profesor::crearProfesoresDeMuestra();
+$alumnos = Alumno::crearAlumnosDeMuestra($asignaturas);
+echo "<h2> Alumnos </h2>";
+echo "<ul>";
+foreach($alumnos as $alumno){
+    echo "<li>";
+    var_dump($alumno);
+    echo "</li>";
+}
+echo "</ul>";

@@ -39,11 +39,15 @@ public static function crearAsignaturasDeMuestra(){
 
     $asignaturas= [];
     $asignaturas[]= new Asignatura(1,"DWES","7 créditos");
-    $asignaturas[]= new Asignatura(2,"DWEc","6 créditos");
+    $asignaturas[]= new Asignatura(2,"DWEC","6 créditos");
     $asignaturas[]= new Asignatura(3,"DIW","4 créditos");
     $asignaturas[]= new Asignatura(4,"DAW","4 créditos");
 
     return $asignaturas;
+}
+
+public function __toString() {
+    return "Nombre: {$this->nombre} " . "Creditos: {$this->creditos}\n";
 }
 
 }

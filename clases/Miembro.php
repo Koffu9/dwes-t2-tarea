@@ -46,10 +46,8 @@ public function setEmail($nuevoEmail){
 }
 
 public function __toString() {
-    return "ID: {$this->id}\n" .
-           "Nombre: {$this->nombre}\n" .
-           "Apellidos: {$this->apellidos}\n" .
-           "Email: {$this->email}";
+    return "Nombre: {$this->nombre} " . "{$this->apellidos} " .
+           "Email: {$this->email}\n";
 }
 }
 
