@@ -4,6 +4,7 @@ require_once 'clases/Miembro.php';
 require_once 'clases/Alumno.php';
 require_once 'clases/Profesor.php';
 require_once 'clases/Asignatura.php';
+require_once 'clases/TriangleGenerator.php';
 
 $miembro = new Miembro(1, "Carlos", "Pérez", "carlos@ejemplo.com");
 echo "<h2>Miembro</h2>";
@@ -47,4 +48,9 @@ echo "<pre>";
 var_dump($asignaturas);
 var_dump($profesores);
 var_dump($alumnos[0]);
+echo "</pre>";
+
+echo "<pre>";
+$triangulo = TriangleGenerator::generateTriangle(6);
+echo "$triangulo";
 echo "</pre>";
